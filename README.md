@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
+Below is a screenshot of the finished product in use, hooked up to a firebase back-end with user authentication.
+
+![alt text](https://user-images.githubusercontent.com/37965052/103513334-9f67c080-4e27-11eb-8d3d-03ef4688a885.PNG)
+
+To get up and running with this and expand it for your own uses all you have to do is create a Google Firebase application using its console, enable email user authentication, create a Cloud Firestore Database, and copy the web firebase config from the console into the "firebase_example.js" file in this repo. Then, change its name to "firebase.js" and start it up.
+
 ## Available Scripts
 
 In the project directory, you can run:
