@@ -14,7 +14,14 @@
     margin-left: 10px;
 }
 
-.post__info > p {
+.post__info>.timestamp_Post {
+    --tw-text-opacity: 1;
+    color: rgba(156, 163, 175, var(--tw-text-opacity));
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.post__info>p {
     font-size: 12px;
     color: gray;
 }
@@ -23,11 +30,18 @@
     overflow-wrap: anywhere;
 }
 
-.post__info > h2 {
+.post__info>h2 {
     font-size: 15px;
 }
 
 .post__buttons {
     display: flex;
     justify-content: space-evenly;
+}
+
+.post>.postimg_body>img {
+    position: relative;
+    height: 24rem;
+    background-color: white;
+    object-fit: cover;
 }

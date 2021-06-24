@@ -14,30 +14,67 @@
 .feed__input {
     border: 1px solid lightgray;
     border-radius: 30px;
-    display:flex;
+    display: flex;
+    flex: 1;
     padding: 10px;
     color: gray;
     padding-left: 15px;
 }
 
-.feed__input > form {
+.feed__input>.image_Picker {
+    display: flex;
+    flex-direction: column;
+    filter: var(--tw-brightness);
+}
+
+.feed__input>.image_Picker:hover {
+    --tw-brightness: brightness(.75);
+    transition-duration: 150ms;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.feed__input>.image_Picker>img {
+    height: 2.5rem;
+    object-fit: contain;
+}
+
+.feed__input>.image_Picker>p {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-align: center;
+    --tw-text-opacity: 1;
+    color: rgba(239, 68, 68, var(--tw-text-opacity));
+}
+
+.feed__input>form {
     display: flex;
     width: 100%;
 }
 
-.feed__input > form > input {
+.feed__input>form>input {
     border: none;
-    flex: 1;
+    flex-grow: 1;
     margin-left: 10px;
     outline-width: 0;
-    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgba(209, 213, 219, var(--tw-text-opacity));
 }
 
-.feed__input > form > button {
+.feed__input>form>button {
     display: none;
 }
 
 .feed__inputOptions {
     display: flex;
     justify-content: space-evenly;
+}
+
+.feed__inputOptions>.inputIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    content: hidden;
 }

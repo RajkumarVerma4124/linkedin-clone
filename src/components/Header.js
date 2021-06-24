@@ -12,7 +12,6 @@ import { logout, selectUser } from '../redux/userSlice';
 import { auth } from '../firebase';
 
 function Header() {
-    const user = useSelector(selectUser)
     const dispatch = useDispatch();
 
     const logoutOfApp = () => {
